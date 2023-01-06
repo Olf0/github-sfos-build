@@ -4,7 +4,7 @@ set -ex
 
 echo "Version 1"
 
-docker run --rm --privileged \
+docker run --privileged \
   -v $GITHUB_WORKSPACE:/workspace \
   -v $GITHUB_ACTION_PATH:/action \
   -e INPUT_RELEASE \
